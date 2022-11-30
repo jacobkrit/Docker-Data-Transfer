@@ -1,7 +1,7 @@
 # Receive Data from STM32MP15 Microcontroller
 
 ### Build & Execution
-`sudo docker -t serial_receiver .`
+`sudo docker -t serial_receiver .`   
 `sudo docker run -t -i --device=/dev/ttyACM0 IMAGE_ID`
 - by using the --device flag we give access to the dev directory through which we receive our data
 

@@ -17,7 +17,7 @@
 2. `sudo docker run -t -i --device=/dev/ttyACM0 IMAGE_ID`
 - by using the --device flag we give access to the dev directory through which we receive our data
 
-### Project Desciption
+# Project Desciption
 Our goal is to receive sensor data from the STM32 Microcontroller via computer and store those data in our MongoDB Local Server. Because we use different computers and Microcontrollers between Lab and Office.
 - `FROM python3` environment as the basic docker layer (n)
 - `COPY receive_from_serial_port.py`  additional layer  (n+1) for the executable program

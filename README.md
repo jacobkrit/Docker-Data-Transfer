@@ -1,7 +1,10 @@
 # Receive Data from STM32MP15 Microcontroller and store them into MongoDB
 
 ### Build & Execution
-`sudo docker -t serial_receiver .`   
+1. `sudo docker build -t serial_receiver .`   
+2. `sudo docker ps` and copy the new IMAGE_ID
+3. Paste the new IMAGE_ID into the `image` variable for the `docker-compose.yml` file
+4. `docker-compose up`
 `sudo docker run -t -i --device=/dev/ttyACM0 IMAGE_ID`
 - by using the --device flag we give access to the dev directory through which we receive our data
 

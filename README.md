@@ -3,10 +3,8 @@
 ### Build & Execution
 1. `sudo docker build -t serial_receiver .`   
 2. `sudo docker ps` and copy the new IMAGE_ID
-3. Paste the new IMAGE_ID into the `image` variable for the `docker-compose.yml` file
-4. `docker-compose up`
-`sudo docker run -t -i --device=/dev/ttyACM0 IMAGE_ID`
-- by using the --device flag we give access to the dev directory through which we receive our data
+3. Paste the new IMAGE_ID into the `image` variable of the `docker-compose.yml` file
+4. To start the container: `docker-compose up`
 
 
 ### Desciption
@@ -45,3 +43,10 @@ Our goal is to receive sensor data from the STM32 Microcontroller via computer a
 15. gain file <= **type: String**
 
 **Note:** This application uses Docker to facilitate simpler program modifications between various lab/office devices while collecting, transferring, and storing chemical data. Using additional packages and dependencies makes Docker more effective, but the fundamentals remain the same. I easily may adapt to more advanced and enterprise applications of data management tools.
+
+
+### Previous Version without environmental variables 
+when you insert static variabes we do not use the docker compose, nor is needed `.yml`
+1. `sudo docker build -t serial_receiver .` 
+2. `sudo docker run -t -i --device=/dev/ttyACM0 IMAGE_ID`
+- by using the --device flag we give access to the dev directory through which we receive our data

@@ -1,5 +1,3 @@
-**Note:** This application uses Docker to facilitate simpler program modifications between various lab/office devices while collecting, transferring, and storing chemical data. Using additional packages and dependencies makes Docker more effective, but the fundamentals remain the same. I easily may adapt to more advanced and enterprise applications of data management tools.
-
 # Receive Data from STM32MP15 Microcontroller and store them into MongoDB
 
 ### Build & Execution
@@ -42,3 +40,5 @@ Our goal is to receive sensor data from the STM32 Microcontroller via computer a
 13. data directory <= **type: String**
 14. data file (raw or processed spectra) - the data could be included as part of the .json file <= **type: String**
 15. gain file <= **type: String**
+
+**Note:** This application uses Docker to facilitate simpler program modifications between various lab/office devices while collecting, transferring, and storing chemical data. Using additional packages and dependencies makes Docker more effective, but the fundamentals remain the same. I easily may adapt to more advanced and enterprise applications of data management tools.

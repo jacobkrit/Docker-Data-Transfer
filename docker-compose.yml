@@ -1,0 +1,7 @@
+services:
+  our_container:
+    container_name: transfer_data_from_stm32_container
+    hostname: stm32_container
+    image: "ecf6d4430a36"
+    env_file:
+      - .env     # path to your .env file

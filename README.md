@@ -1,4 +1,4 @@
-**Note:** This is a simple application for easy transfer and execution of programs between different devices, necessary for lab purposes; in order to collect and store chemical data. I easily may adapt to more advanced and enterprise applications of data management tools.
+**Note:** This application uses Docker to facilitate simpler program modifications between various lab/office devices while collecting, transferring, and storing chemical data. Using additional packages and dependencies makes Docker more effective, but the fundamentals remain the same. I easily may adapt to more advanced and enterprise applications of data management tools.
 
 # Receive Data from STM32MP15 Microcontroller and store them into MongoDB
 
